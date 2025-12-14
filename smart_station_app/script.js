@@ -1,14 +1,26 @@
 // Mock Data
 const busData = [
-    { id: '304', dest: 'Centerville', platform: '2', time: '10:45 AM', status: 'On Time' },
-    { id: '512', dest: 'West End', platform: '4', time: '11:00 AM', status: 'Delayed' },
+    { id: '401G', dest: 'Hebbal', platform: '2', time: '10:45 AM', status: 'On Time' },
+    { id: '225', dest: 'Megestic', platform: '4', time: '11:00 AM', status: 'Delayed' },
     { id: '101', dest: 'Airport', platform: '1', time: '11:15 AM', status: 'Boarding' },
-    { id: '405', dest: 'Tech Park', platform: '3', time: '11:30 AM', status: 'On Time' }
+    { id: '405', dest: 'Tech Park', platform: '3', time: '11:30 AM', status: 'On Time' },
+    { id: '401G', dest: 'Hebbal', platform: '2', time: '10:45 AM', status: 'On Time' },
+    { id: '225', dest: 'Megestic', platform: '4', time: '11:00 AM', status: 'Delayed' },
+    { id: '101', dest: 'Airport', platform: '1', time: '11:15 AM', status: 'Boarding' },
+    { id: '405', dest: 'Tech Park', platform: '3', time: '11:30 AM', status: 'On Time' },
+    { id: '401G', dest: 'Hebbal', platform: '2', time: '10:45 AM', status: 'On Time' },
+    { id: '225', dest: 'Megestic', platform: '4', time: '11:00 AM', status: 'Delayed' },
+    { id: '101', dest: 'Airport', platform: '1', time: '11:15 AM', status: 'Boarding' },
+    { id: '405', dest: 'Tech Park', platform: '3', time: '11:30 AM', status: 'On Time' },
+    { id: '401G', dest: 'Hebbal', platform: '2', time: '10:45 AM', status: 'On Time' },
+    { id: '225', dest: 'Megestic', platform: '4', time: '11:00 AM', status: 'Delayed' },
+    { id: '101', dest: 'Airport', platform: '1', time: '11:15 AM', status: 'Boarding' },
+    { id: '405', dest: 'Tech Park', platform: '3', time: '11:30 AM', status: 'On Time' },
 ];
 
 const crowdLevels = [
-    { bus: '304', level: 80, label: 'High' }, // High density
-    { bus: '512', level: 30, label: 'Low' },
+    { bus: '401G', level: 80, label: 'High' }, // High density
+    { bus: '225', level: 30, label: 'Low' },
     { bus: '101', level: 60, label: 'Med' },
     { bus: '405', level: 20, label: 'Low' }
 ];
