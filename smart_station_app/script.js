@@ -18,6 +18,7 @@ const busData = [
     { id: '405', dest: 'Tech Park', platform: '3', time: '11:30 AM', status: 'On Time' },
 ];
 
+<<<<<<< HEAD
 const buses = ["401G", "225", "101", "405A", "405B"];
 
 function getCrowdRangeByHour(hour) {
@@ -135,12 +136,24 @@ document.addEventListener("DOMContentLoaded", () => {
 //   renderCrowd(slotIndex);
 // });
 
+=======
+const crowdLevels = [
+    { bus: '401G', level: 80, label: 'High' }, // High density
+    { bus: '225', level: 30, label: 'Low' },
+    { bus: '101', level: 60, label: 'Med' },
+    { bus: '405', level: 20, label: 'Low' }
+];
+>>>>>>> d7a062b18e943d58504bf79b9cd2476d4052232a
 
 // Intialize
 document.addEventListener('DOMContentLoaded', () => {
     updateTime();
     renderSchedule();
+<<<<<<< HEAD
     // renderCrowd(0);
+=======
+    renderCrowd();
+>>>>>>> d7a062b18e943d58504bf79b9cd2476d4052232a
     setInterval(updateTime, 1000);
 });
 
@@ -196,6 +209,28 @@ function getStatusColor(status) {
     return '#fff';
 }
 
+<<<<<<< HEAD
+=======
+// Render Crowd Visualizer
+function renderCrowd() {
+    const container = document.getElementById('crowd-visualizer');
+    container.innerHTML = '';
+
+    crowdLevels.forEach(item => {
+        const height = item.level + '%';
+        let colorClass = 'low';
+        if (item.level > 40) colorClass = 'medium';
+        if (item.level > 70) colorClass = 'high';
+
+        const bar = document.createElement('div');
+        bar.className = `bar ${colorClass}`;
+        bar.style.height = height;
+        bar.setAttribute('data-label', `Bus ${item.bus}`);
+        container.appendChild(bar);
+    });
+}
+
+>>>>>>> d7a062b18e943d58504bf79b9cd2476d4052232a
 // SOS Logic
 function triggerSOS() {
     const status = document.getElementById('sos-status');
@@ -272,4 +307,8 @@ function generateTicket(e) {
     `;
 
     document.getElementById('ticket-result').innerHTML = ticketHTML;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> d7a062b18e943d58504bf79b9cd2476d4052232a

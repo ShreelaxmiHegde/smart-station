@@ -518,13 +518,18 @@ h1 {
     }
 }
 
+<<<<<<< HEAD
 #time-input {
+=======
+#search-input {
+>>>>>>> d7a062b18e943d58504bf79b9cd2476d4052232a
     width: 200px;
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
     margin-left: 10px;
     margin-top: 50px;
+<<<<<<< HEAD
 }
 
 .search-form {
@@ -541,4 +546,6 @@ h1 {
 
 .legend {
     margin-top: 2rem;
+=======
+>>>>>>> d7a062b18e943d58504bf79b9cd2476d4052232a
 }
